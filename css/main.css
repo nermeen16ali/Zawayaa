@@ -41,6 +41,8 @@ body::before {
   background: linear-gradient(118.47deg, #E9ECC8 21.99%, rgba(233, 236, 200, 0.4) 69.17%, #E9ECC8 99.53%);
   left: 0;
   right: 0;
+  top: 0;
+  bottom: 0;
   min-height: 100vh;
   height: 100%;
 }
