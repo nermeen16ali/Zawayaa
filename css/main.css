@@ -1,0 +1,125 @@
+:root {
+  --text-black-color: #192d35;
+  --text-color: #0f3443;
+  --text-gray-color: #617b85;
+  --white-color: #fff;
+  --main-color: #d4a473;
+  --border-radius: 25.5px;
+}
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+[type="email"],
+[type="number"],
+[type="tel"],
+[type="url"] {
+  direction: rtl;
+}
+body {
+  background-image: url(../images/zawayaa-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(118.47deg, #E9ECC8 21.99%, rgba(233, 236, 200, 0.4) 69.17%, #E9ECC8 99.53%);
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+/* ======================================== Soon ====================================== */
+@media (max-height: 800px) {
+  .soon {
+    padding-bottom: 100px;
+  }
+}
+.bg_img {
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.container-fluid {
+  padding-inline-start: 10.4%;
+  padding-inline-end: 4%;
+  min-height: 100vh;
+}
+.zawayaa_logo {
+  padding-top: 29px;
+}
+.soon_seprator {
+  margin-top: 41.8px;
+  margin-bottom: 85.73px;
+}
+.soon_text, .inner_soon_text {
+  width: fit-content;
+}
+.soon_images, .soon_text{
+    position: relative;
+    z-index: 2;
+}
+.soon_text span {
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--text-black-color);
+  margin-bottom: 33px;
+}
+.soon_text p {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.soon_text .form-control {
+  height: 51px;
+  padding: 15px 20px;
+  font-style: 18px;
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  background-color: var(--white-color);
+  border: none;
+  outline: none;
+  margin-inline-end: 11px;
+  width: 333px;
+}
+.soon_text .form-control::placeholder {
+  color: var(--text-gray-color);
+}
+.soon_text .form-control:focus {
+  box-shadow: none;
+}
+.main_btn {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  display: block;
+  padding: 15px 46px;
+  border: 0;
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+.soon_shadow {
+  bottom: -129px;
+  left: 98px;
+  width: 539px;
+  height: 512px;
+  background-color: var(--main-color);
+  border-radius: 256px;
+  opacity: 90%;
+  filter: blur(202.3px);
+  z-index: 1;
+}
