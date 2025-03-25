@@ -27,6 +27,40 @@ ol {
 [type="url"] {
   direction: rtl;
 }
+@font-face {
+  font-family: "Lyon Arabic Display";
+  src: url("../font/COMM - Lyon Arabic Display Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lyon Arabic Display";
+  src: url("../font/COMM - Lyon Arabic Display Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lyon Arabic Display";
+  src: url("../font/COMM - Lyon Arabic Display Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lyon Arabic Display";
+  src: url("../font/COMM - Lyon Arabic Display Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lyon Arabic Display";
+  src: url("../font/COMM - Lyon Arabic Display Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   background-image: url(../images/zawayaa-bg.svg);
   background-position: center;
@@ -34,11 +68,18 @@ body {
   background-size: cover;
   min-height: 100vh;
   position: relative;
+  font-family: "Lyon Arabic Display", sans-serif;
+  font-weight: 400;
 }
 body::before {
   content: "";
   position: absolute;
-  background: linear-gradient(118.47deg, #E9ECC8 21.99%, rgba(233, 236, 200, 0.4) 69.17%, #E9ECC8 99.53%);
+  background: linear-gradient(
+    118.47deg,
+    #e9ecc8 21.99%,
+    rgba(233, 236, 200, 0.4) 69.17%,
+    #e9ecc8 99.53%
+  );
   left: 0;
   right: 0;
   top: 0;
@@ -47,11 +88,6 @@ body::before {
   height: 100%;
 }
 /* ======================================== Soon ====================================== */
-@media (max-height: 800px) {
-  .soon {
-    padding-bottom: 100px;
-  }
-}
 .bg_img {
   bottom: 0;
   left: 0;
@@ -69,12 +105,14 @@ body::before {
   margin-top: 41.8px;
   margin-bottom: 85.73px;
 }
-.soon_text, .inner_soon_text {
+.soon_text,
+.inner_soon_text {
   width: fit-content;
 }
-.soon_images, .soon_text{
-    position: relative;
-    z-index: 2;
+.soon_images,
+.soon_text {
+  position: relative;
+  z-index: 2;
 }
 .soon_text span {
   font-size: 48px;
@@ -90,7 +128,7 @@ body::before {
 .soon_text .form-control {
   height: 51px;
   padding: 15px 20px;
-  font-style: 18px;
+  font-size: 18px;
   border-radius: var(--border-radius);
   color: var(--text-color);
   background-color: var(--white-color);
@@ -109,7 +147,7 @@ body::before {
   background-color: var(--main-color);
   color: var(--white-color);
   display: block;
-  padding: 15px 46px;
+  padding: 12px 46px;
   border: 0;
   font-size: 18px;
   border-radius: var(--border-radius);
@@ -125,4 +163,75 @@ body::before {
   opacity: 90%;
   filter: blur(202.3px);
   z-index: 1;
+}
+@media (max-height: 800px) {
+  .soon {
+    padding-bottom: 100px;
+  }
+  .soon_shadow {
+    bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .container-fluid {
+    padding-inline: 16px;
+  }
+  .soon_text {
+    margin-inline: auto;
+  }
+  .inner_soon_text {
+    max-width: 70%;
+    margin-inline: auto;
+  }
+  .zawayaa_text_img {
+    max-width: 60%;
+    margin-inline: auto;
+  }
+  .zawayaa_logo img {
+    width: 40px;
+  }
+  .soon_text span {
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-top: 28px;
+  }
+  .soon_seprator {
+    margin-top: 6px;
+    margin-bottom: 20.73px;
+  }
+  .soon_text .form-control {
+    margin-inline-end: 0;
+    margin-top: 18px;
+    width: 100%;
+  }
+  .main_btn {
+    margin-inline: auto;
+    margin-top: 21px;
+    padding: 9px 46px;
+    width: 100%;
+  }
+  .zawayaa_logo {
+    padding-top: 16px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .soon_text p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .soon_images {
+    max-width: 150px;
+    margin-inline: auto;
+  }
+  .soon {
+    padding-bottom: 0;
+  }
+  .bg_img{
+    display: none;
+  }
+}
+@media (max-width: 991px) and (max-height: 650px) {
+  .soon {
+    padding-bottom: 20px;
+  }
 }
