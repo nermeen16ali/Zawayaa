@@ -188,7 +188,7 @@ body::before {
     margin-inline: auto;
   }
   .zawayaa_logo img {
-    width: 40px;
+    width: 52px;
   }
   .soon_text span {
     margin-bottom: 15px;
@@ -199,7 +199,7 @@ body::before {
     margin-top: 6px;
     margin-bottom: 20.73px;
   }
-  .soon_seprator img{
+  .soon_seprator img {
     max-width: 60%;
   }
   .soon_text .form-control {
@@ -215,8 +215,8 @@ body::before {
   }
   .zawayaa_logo {
     padding-top: 16px;
-    margin-bottom: 36px;
-    text-align: center;
+    margin-bottom: 20px;
+    padding-inline-start: 20px;
   }
   .soon_text p {
     text-align: center;
@@ -229,7 +229,7 @@ body::before {
   .soon {
     padding-bottom: 0;
   }
-  .bg_img{
+  .bg_img {
     display: none;
   }
 }
