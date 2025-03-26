@@ -199,6 +199,9 @@ body::before {
     margin-top: 6px;
     margin-bottom: 20.73px;
   }
+  .soon_seprator img{
+    max-width: 60%;
+  }
   .soon_text .form-control {
     margin-inline-end: 0;
     margin-top: 18px;
